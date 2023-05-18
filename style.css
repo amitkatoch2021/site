@@ -1,0 +1,199 @@
+/* Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+a {
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1a202c;
+}
+
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header .navigation {
+    display: flex;
+}
+
+.header .navigation a {
+    margin-left: 20px;
+}
+
+.intro {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.intro .button {
+    display: inline-block;
+    background-color: #e2e8f0;
+    color: #4a4a4a;
+    padding: 12px 32px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.intro .button:hover {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.features .feature {
+    flex-basis: calc(33.333% - 20px);
+    margin-bottom: 40px;
+}
+
+.features .feature h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.features .feature p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.cta {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color#1a202c;
+    color: #e2e8f0;
+}
+
+.cta h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.cta .button {
+    display: inline-block;
+    background-color: #e2e8f0;
+    color: #4a4a4a;
+    padding: 12px 32px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.cta .button:hover {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+.footer {
+    background-color: #f7fafc;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer .logo {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer .navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .navigation a {
+    margin-left: 20px;
+}
+
+.footer .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.footer .social a {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .features .feature {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .features .feature {
+        flex-basis: 100%;
+    }
+
+    .cta h2 {
+        font-size: 32px;
+    }
+
+    .cta p {
+        font-size: 18px;
+    }
+}
